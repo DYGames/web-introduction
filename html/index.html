@@ -39,7 +39,7 @@
                 <img src="../images/img.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">코건</h5>
-                    <p class="card-text">성신여대와 보문 어딘가에서 기타치는 코건입니다.</p>
+                    <p class="card-text">성신여대와 보문 사이 어딘가에서 기타치고 코딩하는 코건입니다.</p>
                     <a target="_blank" href="https://github.com/DYGames" class="btn btn-primary">Github</a>
                     <a target="_blank" href="https://instagram.com/dygames37" class="btn btn-primary">Instagram</a>
                 </div>
@@ -48,42 +48,18 @@
                 <h1 id="guestbook">방명록</h1>
                 <form>
                     <div class="form-floating">
-                        <input type="email" class="form-control" id="name" placeholder="hi"></input>
+                        <input type="email" class="form-control" id="name" placeholder="name"></input>
                         <label id="name-label" for="name">이름</label>
                     </div>
-                    <label for="name" class="form-label">본인 취향 영화</label>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="movie1">
-                        <label class="form-check-label" for="movie1">
-                            12 몽키즈
-                        </label>
+                    <div id="guestbook-movie">
+                        <label for="name" class="form-label">본인 취향 영화</label>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="movie2">
-                        <label class="form-check-label" for="movie2">
-                            펄프 픽션
-                        </label>
+
+                    <div id="guestbook-album">
+                        <label for="name" class="form-label">본인 취향 앨범</label>
+                        <button class="btn btn-primary" type="button" onclick="addGuestBook()">등록</button>
+                        <button class="btn btn-primary" type="reset" onclick="resetGuestBook()">취소</button>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="movie3">
-                        <label class="form-check-label" for="movie3">
-                            트레인스포팅
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="movie4">
-                        <label class="form-check-label" for="movie4">
-                            박하사탕
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="movie5">
-                        <label class="form-check-label" for="movie5">
-                            노인을 위한 나라는 없다
-                        </label>
-                    </div>
-                    <button class="btn btn-primary" type="button">등록</button>
-                    <button class="btn btn-primary" type="reset">취소</button>
                 </form>
             </div>
         </div>
@@ -100,66 +76,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><img class="poster"
-                                src="https://movie-phinf.pstatic.net/20111223_236/1324587168774v1rWh_JPEG/movie_image.jpg" />
-                        </td>
-                        <td>12 몽키즈</td>
-                        <td>서기 2035년 미래의 인류는 바이러스 감염으로 인해 99%가 멸망하고 소수의 생손자들은 지상에서의 생활을 포기한 채 지하 세계에서 생활하게 된다.</td>
-                        <td><a target="_blank"
-                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=17758">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img class="poster"
-                                src="https://movie-phinf.pstatic.net/20111221_33/1324474363727fxRgN_JPEG/movie_image.jpg" />
-                        </td>
-                        <td>펄프 픽션</td>
-                        <td>어느 식당에 두 남녀 건달(팀 로스, 아만다 플러머 분)이 손님을 상대로 강도행각을 벌이는 사건으로부터 영화는 시작된다.</td>
-                        <td><a target="_blank"
-                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=16571">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img class="poster"
-                                src="https://movie-phinf.pstatic.net/20111222_226/1324494144330DlQSl_JPEG/movie_image.jpg" />
-                        </td>
-                        <td>트레인스포팅</td>
-                        <td>마크 렌턴(이완 맥그리거 분)은 에딘버러의 거리에서 두 명의 상점 감시자들에게 쫓기고 있다. 자켓에 넣어둔 훔친 물건들이 바닥에 떨어진다. </td>
-                        <td><a target="_blank"
-                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=17967">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img class="poster"
-                                src="https://movie-phinf.pstatic.net/20180416_198/1523869200043wycgA_JPEG/movie_image.jpg" />
-                        </td>
-                        <td>박하사탕</td>
-                        <td>스무 살 첫사랑, 그 순수로 떠나는 시간여행
-                            다시 시작하고 싶다! 다시 시작할 수 있다!</td>
-                        <td><a target="_blank"
-                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=27219">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img class="poster"
-                                src="https://movie-phinf.pstatic.net/20180716_50/1531704983188SS89n_JPEG/movie_image.jpg" />
-                        </td>
-                        <td>노인을 위한 나라는 없다</td>
-                        <td>총격전이 벌어진 끔찍한 현장에서 르웰린 모스(조슈 브롤린)는
-                            우연히 이백만 달러가 들어있는 가방을 손에 넣는다.
-                            그러나 이 가방을 찾는 또 다른 이가 있었으니 바로 살인마 안톤 시거(하비에르 바르뎀).
-                            그리고 이들의 뒤를 쫓는 보안관 벨(토미 리 존스)까지 합세하면서
-                            누구도 피할 수 없는, 목숨을 건 추격전이 시작된다.</td>
-                        <td><a target="_blank"
-                                href="https://movie.naver.com/movie/bi/mi/basic.naver?code=66751">바로가기</a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
             <h1 id="album">인생 앨범 BEST5</h1>
@@ -174,66 +90,6 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td><img class="cover"
-                                src="https://lh3.googleusercontent.com/VMWBpSXgG5fcJ4bGGRpbrZm8YaSq33FM_k35KQ9da9vu-PZAxHdnvRL2vIFFoqAyucQ0IlHFHrBAwFhk=w544-h544-l90-rj" />
-                        </td>
-                        <td>Smashing Pumpkins - Mellon Collie And The Infinite Sadness</td>
-                        <td>서기 2035년 미래의 인류는 바이러스 감염으로 인해 99%가 멸망하고 소수의 생손자들은 지상에서의 생활을 포기한 채 지하 세계에서 생활하게 된다.</td>
-                        <td><a target="_blank"
-                                href="https://music.youtube.com/playlist?list=OLAK5uy_lvoCnzfuW1DyRCltvbMBxfUoKZGlBvKNs">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td><img class="cover"
-                                src="https://lh3.googleusercontent.com/tCnRO-5paB2Na8WhxMfV2q1dM7lLwChFgk19qgNPBPSEfOCWmfGHTvkgx2UABcxBSy-bxELjZ72-lPM=w544-h544-s-l90-rj" />
-                        </td>
-                        <td>Pixies - Doolittle</td>
-                        <td>어느 식당에 두 남녀 건달(팀 로스, 아만다 플러머 분)이 손님을 상대로 강도행각을 벌이는 사건으로부터 영화는 시작된다.</td>
-                        <td><a target="_blank"
-                                href="https://music.youtube.com/playlist?list=OLAK5uy_lf6jsYkBOcfA6eAzNNIr2PeQv0Cns519A">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td><img class="cover"
-                                src="https://lh3.googleusercontent.com/XF6jRih4HSh3H0gFL4keLO1GurCD1BqcGayZjsTKk0R_Ijcpx3vJBu1oU8DJ2vin7GSVIPHfJeB3qC_YCQ=w544-h544-l90-rj" />
-                        </td>
-                        <td>세이수미 - The Last Thing Left</td>
-                        <td>마크 렌턴(이완 맥그리거 분)은 에딘버러의 거리에서 두 명의 상점 감시자들에게 쫓기고 있다. 자켓에 넣어둔 훔친 물건들이 바닥에 떨어진다. </td>
-                        <td><a target="_blank"
-                                href="https://music.youtube.com/playlist?list=OLAK5uy_kEVIB65xg6T3gUo5fCHSCMDC8tvq7l3FE">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td><img class="cover"
-                                src="https://lh3.googleusercontent.com/4SvxoyJf8oscWyfPEN3sQsiTpzcQ_4ko4x0ywY_-p4GNkLql4RQJh0GfF85Bumm8O2ODKfhsS2tya1Px0Q=w544-h544-l90-rj" />
-                        </td>
-                        <td>Korn - Follow The Leader</td>
-                        <td>스무 살 첫사랑, 그 순수로 떠나는 시간여행
-                            다시 시작하고 싶다! 다시 시작할 수 있다!</td>
-                        <td><a target="_blank"
-                                href="https://music.youtube.com/playlist?list=OLAK5uy_l9DBNhKxExv0Xd2CrzEY0vmUupeVjzRVw">바로가기</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td><img class="cover"
-                                src="https://lh3.googleusercontent.com/160b6SHUHXWexaTg6zvWlLgbII-cFT-Lm1BfIcn_z01K3XTOKexkAe5ntpgwvFiD2GUDqEmVlnJvlgtl=w544-h544-l90-rj" />
-                        </td>
-                        <td>Pavement - Crooked Rain, Crooked Rain</td>
-                        <td>총격전이 벌어진 끔찍한 현장에서 르웰린 모스(조슈 브롤린)는
-                            우연히 이백만 달러가 들어있는 가방을 손에 넣는다.
-                            그러나 이 가방을 찾는 또 다른 이가 있었으니 바로 살인마 안톤 시거(하비에르 바르뎀).
-                            그리고 이들의 뒤를 쫓는 보안관 벨(토미 리 존스)까지 합세하면서
-                            누구도 피할 수 없는, 목숨을 건 추격전이 시작된다.</td>
-                        <td><a target="_blank"
-                                href="https://music.youtube.com/playlist?list=OLAK5uy_mdyuZeyu-1Te2D4CMLNLucul7v7HoWISA">바로가기</a>
-                        </td>
-                    </tr>
                 </tbody>
             </table>
         </div>
